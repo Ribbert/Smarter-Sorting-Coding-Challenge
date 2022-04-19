@@ -1,0 +1,14 @@
+<!DOCTYPE html> 
+<h3>Current Inputted Products<h3/>
+<table border = 1>
+    {% for name, ing in data %}
+    <tr>
+        <th> {{ name }}  </th>
+        <td> {{ ing }}  </td>
+    </tr>
+    {% endfor %}
+</table>
+<form method="post" action="/">
+    <input type="submit" value="Return to Main Menu" name="mainReturn"/>
+</form>
+  
